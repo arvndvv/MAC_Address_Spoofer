@@ -7,4 +7,4 @@ Mainly Two options
 or 
 [x] Generate random one
 ```
-![EXAMPLE](http://url/to/img.png)
+![EXAMPLE](example.png)
