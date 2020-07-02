@@ -3,8 +3,9 @@
 ```
 A tool to change MAC address of your machine,works for Linux Machines only.
 Mainly Two options 
-[x] give a custom valid MAC address by yourslef
+- [x] give a custom valid MAC address by yourslef
 or 
-[x] Generate random one
+- [x] Generate random one
+
 ```
 ![EXAMPLE](example.png)
