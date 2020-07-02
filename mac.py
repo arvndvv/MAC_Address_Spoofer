@@ -97,7 +97,7 @@ class mac_changer:
                 print("Trying...")
                 success=self.change_mac(iface,cust_mac)
                 if success==1:
-                    print("\033[92m[+] Updated MAC Address is",self.get_mac(iface),'\033[0m')
+                    print("\033[92m[+] Updated MAC Address is",self.get_mac(iface),'\033[0m\n')
                     break
                 print("\033[91m Invalid MAC Address! \033[0m")
 
@@ -116,7 +116,7 @@ class mac_changer:
                 success=self.change_mac(iface,random_mac)
                 if success==1:
                     
-                    print("\033[92m[+] Updated MAC Address is",self.get_mac(iface),'\033[92m')
+                    print("\033[92m[+] Updated MAC Address is",self.get_mac(iface),'\033[0m\n')
                     break
 
     def change_mac(self,iface,new_mac):
