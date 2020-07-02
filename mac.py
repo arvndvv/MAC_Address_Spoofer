@@ -90,7 +90,7 @@ class mac_changer:
             print("\033[91m Wrong Choice! choose the number corresponding to the choice. \033[0m")
         if choice==1:
             print("\033[36m Research and find valid mac addresses!\033[0m")
-            print("\033[95m [+] Current MAC Address is ",self.get_mac(iface),"\033[0m")
+            print("\033[95m[+] Current MAC Address is ",self.get_mac(iface),"\033[0m")
             while True:
                 
                 cust_mac=input("Enter New Mac Address:")
@@ -102,7 +102,7 @@ class mac_changer:
                 print("\033[91m Invalid MAC Address! \033[0m")
 
         if choice==2:
-            print("\033[95m [+] Current MAC Address is ",self.get_mac(iface),'\033[0m')
+            print("\033[95m[+] Current MAC Address is ",self.get_mac(iface),'\033[0m')
             while True:
                 random_mac="%02x:%02x:%02x:%02x:%02x:%02x" % (
                                                     random.randint(0, 255),
@@ -122,13 +122,13 @@ class mac_changer:
     def change_mac(self,iface,new_mac):
         
         output = subprocess.run(["ifconfig",iface,"down"],shell=False,capture_output=True)
-        output.stderr.decode('utf-8')
+        #output.stderr.decode('utf-8')
 
         output = subprocess.run(["ifconfig",iface,"hw","ether",new_mac],shell=False,capture_output=True)
-        output.stderr.decode('utf-8')
+        #output.stderr.decode('utf-8')
 
         output = subprocess.run(["ifconfig",iface,"up"],shell=False,capture_output=True)
-        output.stderr.decode('utf-8')
+        #output.stderr.decode('utf-8')
         if self.get_mac(iface)==self.oldmac:
             return 0
         #print("[+] Updated MAC Address is",self.get_mac(iface))
