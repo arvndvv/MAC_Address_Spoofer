@@ -8,4 +8,4 @@ or
 - [x] Generate random one
 
 ```
-![EXAMPLE](example.png)
+![MACSpoofer](macspoofer.png)
