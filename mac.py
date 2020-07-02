@@ -16,7 +16,8 @@ ____ __________ _  _   ____  ____  _  _  ___ _   _
 |____/____//_/     |_| |____/|_| \_\  |_||___|_| \_| \033[0m \033[91m
 Mac Spoofer                       CODED BY BETABRAIN        \033[0m  \033[37m                                           
 
-               [For Linux Users] \033[0m  
+               [For Linux Users]  
+               [ Run As Admin  ]    \033[0m 
 ''')
 class mac_changer:
     def __init__(self):
