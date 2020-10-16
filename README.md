@@ -13,3 +13,10 @@ or
 
 ```
 ![MACSpoofer](macspoofer.png)
+
+# Working
+It executes the following commands
+1. ifconfig. //to find the interface name
+2. Ifconfig enp2s0 down. //Assume enp2s0 is our interface name, for this example( in program user can provide )
+3. ifconfig enp2s0 hw ether 00:00:00:00:00:01.
+4. ifconfig enp2s0 up.
